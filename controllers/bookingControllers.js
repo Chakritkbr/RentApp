@@ -1,12 +1,5 @@
-import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import imageDownloader from 'image-downloader';
-import { fileURLToPath } from 'url';
-import multer from 'multer';
-import fs from 'fs';
 import Booking from '../models/Booking.js';
-import Place from '../models/Place.js';
-import User from '../models/User.js';
 
 function getUserDataFromReq(req) {
   return new Promise((resolve, rejects) => {
